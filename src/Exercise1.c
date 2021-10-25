@@ -17,21 +17,21 @@ ______________________________________
 
 void Ex1(int n){
 	//Your codes here
-    int arr[1000][1000];
-	for(int testcase = 0; testcase < n; testcase++)
+    int arr[n][n];
+	for(int i = 0; i < n; i++)
 	{
-		for(int j = 0; j <= testcase; j++)
+		for(int j = 0; j <= i; j++)
 		{
 		   
-		   if (testcase == j || j==0 )
+		   if (i == j || j==0 )
 		   {
-			   arr[testcase][j] = 1;
+			   arr[i][j] = 1;
 		   }	
 		   else
 		   {
-			   arr[testcase][j] = arr[testcase - 1][j - 1] + arr[testcase - 1][j];
+			   arr[i][j] = arr[i - 1][j - 1] + arr[i - 1][j];
 		   }
-		   printf("%d ", arr[testcase][j]);
+		   printf("%d ", arr[i][j]);
 		}
 		printf("\n");
 	}
