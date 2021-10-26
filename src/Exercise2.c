@@ -53,7 +53,33 @@ void Ex2(int arr[], int m, int n){
 	int a[SIZE][SIZE];
 	Array2Dconverter(arr,a,m,n);
 	//Your codes here
-
+    
+    arr[m][n];
+	for(int i = 0; i <= m; i++ )
+	{
+		for(int j = 0; j <= n; j+2)
+		{
+			if ( j % 2 == 0)
+			{
+				if(i < i + 1 )
+				{
+					int temp = arr[i];
+					arr[i] = arr[i + 1];
+					arr[i + 1] = temp;
+				}
+			}
+			else
+			{
+				if(i > i + 1)
+				{
+					int temp = arr[i];
+					arr[i] = arr[ i+1];
+					arr[ i+1 ] = temp;
+				}
+			}
+		   printf("%d ", arr[i][j]);
+		}
+	}
 	printArray(a, m, n);
 }
 
