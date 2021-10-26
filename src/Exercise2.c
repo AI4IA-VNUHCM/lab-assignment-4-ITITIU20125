@@ -60,7 +60,7 @@ void Ex2(int arr[], int m, int n){
 		{
 			for(int z = 0; z < n; z++)
 			{
-				if ( j % 2 == 0)
+				if ( z % 2 == 0)
 			{
 				if(a[i][z] < a[j][z] )
 				{
