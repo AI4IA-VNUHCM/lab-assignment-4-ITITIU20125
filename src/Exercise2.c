@@ -54,11 +54,11 @@ void Ex2(int arr[], int m, int n){
 	Array2Dconverter(arr,a,m,n);
 	//Your codes here
 	
-	for(int i = 0; i <= m; i++ )
+	for(int i = 0; i < m; i++ )
 	{
-		for(int j = i + 1; j <= m; j++)
+		for(int j = i + 1; j < m; j++)
 		{
-			for(int z = 0; z <= n; z++)
+			for(int z = 0; z < n; z++)
 			{
 				if ( j % 2 == 0)
 			{
