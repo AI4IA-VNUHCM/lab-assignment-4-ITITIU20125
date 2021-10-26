@@ -62,20 +62,20 @@ void Ex2(int arr[], int m, int n){
 			{
 				if ( j % 2 == 0)
 			{
-				if(arr[i][z] < arr[j][z] )
+				if(a[i][z] < a[j][z] )
 				{
-					int temp = arr[i][z];
-					arr[i] = arr[j][z];
-					arr[j][z] = temp;
+					int temp = a[i][z];
+					a[i][z] = a[j][z];
+					a[j][z] = temp;
 				}
 			}
 			else
 			{
-				if(arr[i][z] > arr[j][z])
+				if(a[i][z] > a[j][z])
 				{
-					int temp = arr[i][z];
-					arr[i][z] = arr[j][z];
-					arr[j][z] = temp;
+					int temp = a[i][z];
+					a[i][z] = a[j][z];
+					a[j][z] = temp;
 				}
 			}
 			}
